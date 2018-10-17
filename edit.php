@@ -13,7 +13,7 @@
 <body>
 <nav id="navbar">
 	<a href="index.php">Hem</a>
-	<a href="play.php">Spela</a>
+	<a href="play.php?page=1">Spela</a>
 	<a class="active" href="edit.php">Redigera</a>
 </nav>	
 <main class="content">
@@ -23,6 +23,10 @@
 // TODO protect with your login
 // add, edit, delete pages & events
 // skriv ut en lista över sidor
+
+
+
+$dbh = new PDO('INSERT INTO `storylinks`(`id`, `storyid`, `target`, `text`) VALUES ([value-1],[value-2],[value-3],[value-4])');
 
 
 

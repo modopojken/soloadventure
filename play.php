@@ -13,10 +13,10 @@
 <body>
 <nav id="navbar">
 	<a href="index.php">Hem</a>
-	<a class="active" href="play.php">Spela</a>
+	<a class="active" href="play.php?page=1">Spela</a>
 	<a href="edit.php">Redigera</a>
-</nav>	
-<main class="content">
+</nav>
+<main class="contentplay">
 	<section>
 		<h1>Spela</h1>
 <!--
@@ -35,7 +35,11 @@
 
 	$dbh = new PDO('mysql:host=localhost;dbname=' . $db . ';charset=utf8mb4', $dbuser, $dbpass);
 
-	echo "<pre>" . print_r($_GET,1) . "</pre>";
+	//echo "<pre>" . print_r($_GET,1) . "</pre>";
+	
+
+	echo " <a href=\"?page=1\">Starta om spelet!</a>";
+
 
 	if (isset($_GET['page'])) {
 
@@ -57,6 +61,7 @@
 
 		echo "<p>" . $row['text'] . "</p>";
 
+
 		$stmt = $dbh->prepare("SELECT * FROM storylinks WHERE storyid = :id");
 		$stmt->bindParam(':id', $filteredPage);
 		$stmt->execute();
@@ -65,12 +70,11 @@
 
 		
 		
-		
 
 		//echo "<pre>" . print_r($row,1) . "</pre>";
 
 		foreach ($row as $val) {
-			echo "<a href=\"?page=" . $val['target'] . "\">" . $val['text'] . "<br></a>"; 
+			echo "<a class=\"knapp\" href=\"?page=" . $val['target'] . "\">". $val['text'] . "<br><br></a>"; 
 		}
 
 	} elseif(isset($_SESSION['page'])) {
@@ -78,7 +82,7 @@
 		// use for returning player / cookie
 	} else {
 		// TODO load start of story from DB
-		echo "Det finns inget ID, klicka länken page 1 för att starta";
+		//echo "Det finns inget ID, klicka länken page 1 för att starta";
 	}
 
 ?>

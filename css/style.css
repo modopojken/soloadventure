@@ -31,6 +31,10 @@
 .content {
     padding: 16px;
 }
+.contentplay {
+    padding: 16px;
+    text-align: center;
+}
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
@@ -70,4 +74,10 @@ h1, h2, h3, h4 {
 
 .gotopagelinks a {
     padding: 12px;
+}
+
+.knapp{
+    color: green;
+    font-size: 140%;
+
 }
