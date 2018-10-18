@@ -5,9 +5,9 @@
 <html lang="se">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Soloäventyr</title>
-	<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Merriweather%7CMerriweather+Sans" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -28,20 +28,17 @@
 
 			<h2>Baronen:<br></h2>
 			<p>En man med stil och eligans. Om det är någon som kan rädda Tyskland så är det honom.</p>
-			<img src="rödebaronen.jpg" width="30%" height="30%"><br><br>
+			<img class="baronen" src="rödebaronen.jpg" alt="baronen"><br><br>
 			<h2>Robert Walton:</h2>
 			<p>Rätt irrelevant egentligen</p>
-			<img src="Robert_Walton.jpg" width="30%" height="30%">
+			<img src="Robert_Walton.jpg" alt="robertwalton">
 			<h2>Alfredos Pissa Pasta 👌👌👌👌👌</h2>
 			<p>Alfredo är ett stackars rikemansbarn som blir kär i Violetta. Han är välutbildad med höga ambitioner. <br> Hans restaurangkedja är en av de största i världen</p>
-			<img src="alfredos.jpg" width="30%" height="30%">
+			<img class="hej" src="alfredos.jpg" alt="alfredos">
 <?php
 
-
-
-
-
 ?>
+</section>
 </main>
 <script src="js/navbar.js"></script>
 </body>

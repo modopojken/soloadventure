@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 	<title>Soloäventyr - Spela</title>
-	<link href="https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Merriweather%7CMerriweather+Sans" rel="stylesheet"> 
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -38,7 +38,7 @@
 	//echo "<pre>" . print_r($_GET,1) . "</pre>";
 	
 
-	echo " <a href=\"?page=1\">Starta om spelet!</a>";
+	echo " <a class=\"restart\" href=\"?page=1\">Starta om spelet!</a>";
 
 
 	if (isset($_GET['page'])) {
@@ -59,7 +59,8 @@
 
 		// echo "<pre>" . print_r($row,1) . "</pre>";
 
-		echo "<p>" . $row['text'] . "</p>";
+
+		echo "<p><br>" . $row['text'] . "</p>";
 
 
 		$stmt = $dbh->prepare("SELECT * FROM storylinks WHERE storyid = :id");
@@ -86,6 +87,7 @@
 	}
 
 ?>
+</section>
 </main>
 <script src="js/navbar.js"></script>
 </body>
