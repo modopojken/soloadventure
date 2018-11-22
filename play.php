@@ -12,9 +12,10 @@
 </head>
 <body>
 <nav id="navbar">
-	<a href="index.php">Hem</a>
-	<a class="active" href="play.php?page=1">Spela</a>
-	<a href="edit.php">Redigera</a>
+	<a class="rättklass" href="index.php">Hem</a>
+	<a class="rättklass" href="play.php?page=1">Spela</a>
+	<a class="active rättklass" href="edit.php">Redigera</a>
+	<a class="logobild" href="index.php"><img src="logobilden.png" alt="logobilden.png"></a>
 </nav>
 <main class="contentplay">
 	<section>

@@ -12,13 +12,14 @@
 </head>
 <body>
 <nav id="navbar">
-	<a class="active" href="index.php">Hem</a>
-	<a href="play.php?page=1">Spela</a>
-	<a href="edit.php">Redigera</a>
+	<a class="rättklass" href="index.php">Hem</a>
+	<a class="rättklass" href="play.php?page=1">Spela</a>
+	<a class="active rättklass" href="edit.php">Redigera</a>
+	<a class="logobild" href="index.php"><img src="logobilden.png" alt="logobilden.png"></a>
 </nav>	
 <main class="content">
 	<section>
-		<h1>Soloäventyr - La Traviata</h1>
+		<h1>Soloäventyr - La Tristiata</h1>
 		<h3>Välkommen till det spännande äventyret om La Tristiata!</h3>
 
 	<!--	<h4>Intro:</h4>
