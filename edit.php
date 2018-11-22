@@ -8,18 +8,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 	<title>Soloäventyr - Redigera</title>
 	<link href="https://fonts.googleapis.com/css?family=Merriweather%7CMerriweather+Sans" rel="stylesheet"> 
-	<link rel="stylesheet" href="css/style.css">
+	 <link rel="stylesheet" href="css/bootstrap.css">
+	 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav id="navbar">
+	<main class="content">
+<div class="container-fluid">
+<nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-brand" href="index.php">Hem</a>
+	<a class="navbar-brand" href="play.php?page=1">Spela</a>
+	<a class="navbar-brand" href="edit.php">Redigera</a>
+	<a class="navbar-brand" href="index.php"><img class="logobild" src="logobilden.png" alt="logobilden.png"></a>
+</nav>
+</div>
 
-	<a class="rättklass" href="index.php">Hem</a>
-	<a class="rättklass" href="play.php?page=1">Spela</a>
-	<a class="active rättklass" href="edit.php">Redigera</a>
-	<a class="logobild" href="index.php"><img src="logobilden.png" alt="logobilden.png"></a>
-
-</nav>	
-<main class="content">
 	<section>
 		<h1>Redigera</h1>
 
@@ -33,7 +35,7 @@
 			<input type="submit" name="submit">
 		</form>
 
-		<form action="edit.php" method="POST" accept-charset="utf-8">
+		<form action="" method="POST" accept-charset="utf-8">
 
 
 
@@ -81,6 +83,7 @@ if (isset($_POST['submit'])) {
 	$stmt->bindParam(':text', $_POST['text']);
 	$stmt->bindParam(':place', $_POST['place']);
 	$stmt->execute();
+
 
 
 ?>
