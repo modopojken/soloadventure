@@ -34,6 +34,9 @@
 			</p>
 		</footer>
 -->
+
+<div class="container">
+
 <?php
 	include_once 'include/dbinfo.php';
 
@@ -43,9 +46,19 @@
 
 	//echo "<pre>" . print_r($_GET,1) . "</pre>";
 	
-
-	echo " <a class=\"restart\" href=\"?page=1\">Starta om spelet!</a>";
-
+	
+			echo 	"<div class='container-fluid'>
+						<div class='row'>
+							<div class='col-2'> 
+							</div>
+							<div class='col-8'> 
+							</div>
+							<div class='col-2'> 
+						<a class='texten' \"restart\" href=\"?page=1\">Starta om spelet!</a>
+							</div>
+						</div>
+					</div>";
+	
 
 	if (isset($_GET['page'])) {
 
@@ -66,7 +79,13 @@
 		// echo "<pre>" . print_r($row,1) . "</pre>";
 
 
-		echo "<p><br>" . $row['text'] . "</p>";
+		echo "<div class='container-fluid'>
+					<div class='row'>
+						<div class='col-12 text-center'>
+							<p class='texten'><br>" . $row['text'] . "</p>
+					</div>
+				</div>
+			</div>";
 
 
 		$stmt = $dbh->prepare("SELECT * FROM storylinks WHERE storyid = :id");
@@ -81,7 +100,15 @@
 		//echo "<pre>" . print_r($row,1) . "</pre>";
 
 		foreach ($row as $val) {
-			echo "<a class=\"knapp\" href=\"?page=" . $val['target'] . "\">". $val['text'] . "<br><br></a>"; 
+			echo "<div class='container-fluid'>
+					<div class='row text-center'>
+						<div class='col-sm-12 spela'>
+							<a class='texten' href=\"?page=" . $val['target'] . "\">". $val['text'] . "
+							</a>
+						</div>
+					</div>
+				</div>
+					"; 
 		}
 
 	} elseif(isset($_SESSION['page'])) {
@@ -93,6 +120,7 @@
 	}
 
 ?>
+</div>
 </section>
 </main>
 <script src="js/navbar.js"></script>
