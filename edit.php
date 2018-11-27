@@ -22,24 +22,34 @@
 </nav>
 </div>
 
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-5 text-center">
+
 	<section>
 		<h1>Redigera</h1>
+			</div>
+			<div class="col-7">
+			</div>
+		</div>
 
 
-
+		<div class="row">
+			<div class="col-6">
 		<form action="edit.php" method="POST" accept-charset="utf-8">
 			<h1>Skriv text här:</h1>
 			<textarea name="text" rows="3" cols="50"></textarea>
+			</div>
+			<div class="col-6">
 			<h1>Skriv plats här:</h1>
 			<input type="text" name="place"><br><br>
 			<input type="submit" name="submit">
+		</div>
 		</form>
+	</div>
 
-		<form action="" method="POST" accept-charset="utf-8">
-
-
-
-		</form>
+		<!--<form action="" method="POST" accept-charset="utf-8">
+		</form>-->
 		
 
 
@@ -88,6 +98,7 @@ if (isset($_POST['submit'])) {
 
 ?>
 </section>
+</div>
 </main>
 <script src="js/navbar.js"></script>
 </body>
