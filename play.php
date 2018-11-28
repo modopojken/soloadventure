@@ -24,8 +24,12 @@
 </main>
 <main class="contentplay">
 	<section>
-		<h1>Spela</h1>
-<!--
+		<div class="container">
+			<div class="row">
+				<h1>Spela</h1>
+			</div>
+		</div>
+<!--	
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit hic aliquid nostrum quibusdam veritatis? Eaque accusantium odit id deserunt, quae minima adipisci nesciunt illum ipsa ea placeat, earum laboriosam corrupti.</p>
 		<footer class="gotopagelinks">
 			<p>
@@ -82,7 +86,7 @@
 		echo "<div class='container-fluid'>
 					<div class='row'>
 						<div class='col-12 text-center'>
-							<p class='texten'><br>" . $row['text'] . "</p>
+							<p class='texten mt-3'><br>" . $row['text'] . "</p>
 					</div>
 				</div>
 			</div>";
@@ -103,7 +107,7 @@
 			echo "<div class='container-fluid'>
 					<div class='row text-center'>
 						<div class='col-sm-12 spela'>
-							<a class='texten' href=\"?page=" . $val['target'] . "\">". $val['text'] . "
+							<a class='texten btn mb-3 btn-outline-dark' href=\"?page=" . $val['target'] . "\">". $val['text'] . "
 							</a>
 						</div>
 					</div>
