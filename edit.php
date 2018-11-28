@@ -26,7 +26,7 @@
 		<div class="row">
 			<div class="col-5 text-center">
 
-	<section>
+	<!--<section>-->
 		<h1>Redigera</h1>
 			</div>
 			<div class="col-7">
@@ -35,19 +35,23 @@
 
 
 		<div class="row">
-			<div class="col-6">
-		<form action="edit.php" method="POST" accept-charset="utf-8">
+			<div class="col-12">
+		<form action="edit.php" method="POST" accept-charset="utf-8"></form>
 			<h1>Skriv text här:</h1>
-			<textarea name="text" rows="3" cols="50"></textarea>
+			<textarea name="text" rows="3" cols="50"></textarea><br><br>
 			</div>
-			<div class="col-6">
+			</div>
+			<div class="row">
+			<div class="col-12">
 			<h1>Skriv plats här:</h1>
-			<input type="text" name="place"><br><br>
+			<input type="text" name="place">
 			<input type="submit" name="submit">
 		</div>
-		</form>
-	</div>
+		</div>
+		</div>
 
+	
+</div>
 		<!--<form action="" method="POST" accept-charset="utf-8">
 		</form>-->
 		
@@ -97,8 +101,8 @@ if (isset($_POST['submit'])) {
 
 
 ?>
-</section>
-</div>
+<!--</section>-->	
+
 </main>
 <script src="js/navbar.js"></script>
 </body>

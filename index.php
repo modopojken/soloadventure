@@ -10,7 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Merriweather%7CMerriweather+Sans" rel="stylesheet"> 
 	 <link rel="stylesheet" href="css/bootstrap.css">
 	 <link rel="stylesheet" href="style.css">
-	 </style>	
+	 	
 </head>
 <body>
 	<main class="content">
@@ -24,11 +24,11 @@
 </div>
 	<div class="container-fluid">
 		<div class="col-sm-12">
-	<section>
+	<!--<section>-->
 		<h1>Soloäventyr - La Tristiata</h1>
 		<h3>Välkommen till det spännande äventyret om La Tristiata!</h3>
 		<p>Du kommer att stöta på intressanta karaktärer, Så som:<br><br></p>
-			</div>
+	</div>
 				<div class="row">
 					<div class="col-sm-4">
 						<h2>Baronen:<br></h2>
@@ -49,12 +49,14 @@
 				<p>Hans restaurangkedja är en av de största i världen</p>
 				<img src="alfredos.jpg" alt="alfredos">
 			</div>
-		</div>
+		<!--</section>-->
+	</div>
+</div>
 <?php
 
 ?>
-</div>
-</section>
+
+
 </main>
 	<script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>

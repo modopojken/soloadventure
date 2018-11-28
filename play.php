@@ -54,7 +54,7 @@
 							<div class='col-8'> 
 							</div>
 							<div class='col-2'> 
-						<a class='texten' \"restart\" href=\"?page=1\">Starta om spelet!</a>
+						<a class='texten' href=\"?page=1\">Starta om spelet!</a>
 							</div>
 						</div>
 					</div>";
