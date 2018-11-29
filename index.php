@@ -19,27 +19,27 @@
 	<a class="navbar-brand" href="index.php">Hem</a>
 	<a class="navbar-brand" href="play.php?page=1">Spela</a>
 	<a class="navbar-brand" href="edit.php">Redigera</a>
-	<a class="navbar-brand" href="index.php"><img class="logobild" src="logobilden.png" alt="logobilden.png"></a>
+	<a class="navbar-brand hide" href="index.php"><img class="logobild" src="logobilden.png" alt="logobilden.png"></a>
 </nav>
 </div>
 	<div class="container-fluid">
 		<div class="col-sm-12">
 	<!--<section>-->
-		<h1>Soloäventyr - La Tristiata</h1>
-		<h3>Välkommen till det spännande äventyret om La Tristiata!</h3>
+		<h1 class="textis textas">Soloäventyr - La Tristiata</h1>
+		<h3 class="textis">Välkommen till det spännande äventyret om La Tristiata!</h3>
 		<p>Du kommer att stöta på intressanta karaktärer, Så som:<br><br></p>
 	</div>
 				<div class="row">
 					<div class="col-sm-4">
 						<h2>Baronen:<br></h2>
 						<p>En man med stil och eligans. Om det är någon som kan rädda Tyskland så är det honom.</p>
-						<img src="redbaronnew.png" alt="rödebaronen.jpg"> <br><br>
+						<img class="img-fluid" src="redbaronnew.png" alt="rödebaronen.jpg"> <br><br>
 					</div>
 				
 			<div class="col-sm-4">
 				<h2>Robert Walton:</h2>
 				<p>Rätt irrelevant egentligen</p>
-				<img src="robertwaltonnew.png" alt="Robert_Walron.jpg">
+				<img class="img-fluid" src="robertwaltonnew.png" alt="Robert_Walron.jpg">
 		
 			</div>
 			<div class="col-sm-4">
@@ -47,7 +47,7 @@
 				<p>Alfredo är ett stackars rikemansbarn som blir kär i Violetta.</p>
 				<p>Han är välutbildad med höga ambitioner.</p>
 				<p>Hans restaurangkedja är en av de största i världen</p>
-				<img src="alfredos.jpg" alt="alfredos">
+				<img class="img-fluid" src="alfredos.jpg" alt="alfredos">
 			</div>
 		<!--</section>-->
 	</div>

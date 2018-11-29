@@ -7,3 +7,17 @@
 .texten{
 	font-size: 150%;
 }
+@media screen and (max-width: 992px){
+	.hide{
+		display: none;
+	}
+	.textis{
+	font-size: 150%;
+	}
+	.textas{
+	font-weight: bold;
+	}
+}
+@media screen and (max-width: 600px) {
+    
+}

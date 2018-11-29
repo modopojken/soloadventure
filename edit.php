@@ -11,6 +11,7 @@
 	 <link rel="stylesheet" href="css/bootstrap.css">
 	 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<main class="content">
 <div class="container-fluid">
@@ -38,14 +39,16 @@
 			<div class="col-12">
 		<form action="edit.php" method="POST" accept-charset="utf-8"></form>
 			<h1>Skriv text här:</h1>
-			<textarea name="text" rows="3" cols="50"></textarea><br><br>
+			<textarea name="text" rows="8" cols="30"></textarea><br><br>
 			</div>
 			</div>
 			<div class="row">
-			<div class="col-12">
+			<div class="col-6">
 			<h1>Skriv plats här:</h1>
 			<input type="text" name="place">
 			<input type="submit" name="submit">
+		</div>
+		<div class="col-6">
 		</div>
 		</div>
 		</div>
